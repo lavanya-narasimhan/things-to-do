@@ -1,20 +1,23 @@
 name: GitHub Pages
 
-on:
-  push:
-    branches:
-      - main  # Replace with your branch name
-
+on: [push]
+permissions:
+    contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+
+      - name: Install and Build 
+        run: |
+          npm install
+          node app.js
 
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
           folder: public
