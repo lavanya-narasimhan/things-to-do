@@ -1,0 +1,52 @@
+body {
+    background-image: url('flower-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+    background-color: transparent;
+    background-blend-mode: hard-light;
+  }
+
+button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 80px;
+    font-family: "Impact";
+    background-color: #ff9800;
+    border: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+    /* font-size: larger; */
+  }
+
+#random-text {
+    display: none;
+    padding: 20px 40px;
+    font-size: 90px;
+    /* font-weight: 35px; */
+    font-family: "Impact";
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    font-style: bold;
+    /* font-size: larger; */
+  }
+
+button:hover  {
+    background-color: #fdab2f;
+  }
+  button:active {
+    background-color: #ffa726;
+    transform: translateY(3px);
+
+  }
+
+  .container {
+    text-align: center;
+  }
